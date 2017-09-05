@@ -1,0 +1,5 @@
+<h1><%= @list.name %> - <%= @destination.name %></h1>
+<p><%= @destination.body %></p>
+<%= link_to 'Edit destination', edit_list_destination_path([@list, @destination]) %>
+<%= link_to 'Delete destination', [@list, @destination], method: :delete %>
+<%= link_to 'Back To destinations', list_destinations_path(@list) %>

@@ -1,0 +1,7 @@
+<h1><%= @list.id ? 'Edit List' : 'Create List' %></h1>
+<hr />
+<%= form_for @list do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>

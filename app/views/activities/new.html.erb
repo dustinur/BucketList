@@ -1,0 +1,10 @@
+<h1>Add A activity</h1>
+<%= form_for [@destination, @activity] do |f| %>
+  <%= f.label :body %>
+  <%= f.text_area :body, required: true %>
+  <br />
+  <%= f.label :name %>
+  <%= f.text_field :name, placeholder: 'Leave Blank To Remain Anonymous' %>
+  <br />
+  <%= f.submit %>
+<% end %>
